@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Company – Global Consulting & Technology Advisors</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/animations.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Dark Mode Toggle -->
+    <button class="dark-toggle" onclick="toggleDarkMode()">🌓</button>
+
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content fade-up">
+            <h1>Global Consulting Excellence – 9+ Years</h1>
+            <p>We empower organizations across the world with bespoke software, modernization, cloud adoption, automation & digital transformation solutions.</p>
+            <a href="#services" class="cta-btn">Explore Our Services</a>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stat-box">
+            <h2 class="counter" data-target="9">0</h2>
+            <p>Years of Excellence</p>
+        </div>
+        <div class="stat-box">
+            <h2 class="counter" data-target="50">0</h2>
+            <p>Enterprise Clients</p>
+        </div>
+        <div class="stat-box">
+            <h2 class="counter" data-target="120">0</h2>
+            <p>Projects Delivered</p>
+        </div>
+        <div class="stat-box">
+            <h2 class="counter" data-target="15">0</h2>
+            <p>Industries Served</p>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>About Us</h2>
+        <p>We offer bespoke software solutions, automation, cloud modernization, enterprise architecture transformation, DevOps/SRE adoption and security consulting.</p>
+
+        <p>We guide organizations in toolchain selection, audit remediation, regulatory compliance and avoiding vendor lock-in on public cloud platforms.</p>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+
+        <div class="service-grid">
+
+            <div class="service-card fade-up">
+                <img src="assets/images/service1.jpg" alt="Software Development">
+                <h3>Bespoke Software Development</h3>
+                <p>Top-tier engineers delivering high-quality, scalable and innovative solutions tailored to your business needs.</p>
+            </div>
+
+            <div class="service-card fade-up">
+                <img src="assets/images/service2.jpg" alt="Modernization">
+                <h3>Legacy System Modernization</h3>
+                <p>We rebuild legacy platforms using modern tech, agile delivery, and enterprise architecture best practices.</p>
+            </div>
+
+            <div class="service-card fade-up">
+                <img src="assets/images/service1.jpg" alt="Cloud">
+                <h3>Cloud Adoption & Migration</h3>
+                <p>Seamless cloud migration with zero downtime, cost optimization and SRE-driven resilience practices.</p>
+            </div>
+
+            <div class="service-card fade-up">
+                <img src="assets/images/service2.jpg" alt="Automation">
+                <h3>Automation Engineering</h3>
+                <p>Reliable test automation frameworks that accelerate releases and improve product stability.</p>
+            </div>
+
+            <div class="service-card fade-up">
+                <img src="assets/images/service1.jpg" alt="Digital Transformation">
+                <h3>Digital Transformation</h3>
+                <p>We integrate digital solutions, enable Agile delivery and simplify enterprise technological complexity.</p>
+            </div>
+
+            <div class="service-card fade-up">
+                <img src="assets/images/service2.jpg" alt="Quality Assurance">
+                <h3>Quality Assurance</h3>
+                <p>We close audit gaps, strengthen risk & security posture and architect future-ready ecosystems.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="portfolio-grid">
+
+            <div class="portfolio-item fade-up">
+                <img src="assets/images/portfolio1.jpg" alt="Project 1">
+                <h3>Insurance Digital Platform</h3>
+                <p>Built a valuation portal integrating major insurance companies using secure and scalable infrastructure.</p>
+            </div>
+
+            <div class="portfolio-item fade-up">
+                <img src="assets/images/portfolio2.jpg" alt="Project 2">
+                <h3>Telco Strategic Systems</h3>
+                <p>Delivered mission-critical solutions for the largest Telco in Kenya driving digital transformation.</p>
+            </div>
+
+            <div class="portfolio-item fade-up">
+                <img src="assets/images/portfolio3.jpg" alt="Project 3">
+                <h3>InsureTech Innovation</h3>
+                <p>Key role in building first-of-its-kind insuretech products in the region.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>What Clients Say</h2>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card fade-up">
+                <p>“Exceptional expertise! Their modernization strategy transformed our outdated architecture into a high-performing ecosystem.”</p>
+                <h4>— Global Insurance Partner</h4>
+            </div>
+
+            <div class="testimonial-card fade-up">
+                <p>“Their cloud migration capabilities saved us millions in cloud waste while improving system reliability significantly.”</p>
+                <h4>— FinTech CTO</h4>
+            </div>
+
+            <div class="testimonial-card fade-up">
+                <p>“A true partner in innovation. Their engineers built our digital platform with great attention to detail.”</p>
+                <h4>— Telco Engineering Lead</h4>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+
+        <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST" class="contact-form fade-up">
+            <input type="hidden" name="_captcha" value="false">
+
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Your Company Name – Global Consulting & Technology Services</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
